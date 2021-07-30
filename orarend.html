@@ -1,83 +1,71 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timetable</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <form id="login" action="/login">
-        <h2>Login</h2>
-        <div id="datas">
-            <label for="username">Enter your username:</label>
-            <input type="username" placeholder="Username" name="username">
-        </div>
-        <div id="datas">
-            <label for="username">Enter your password:</label>
-            <input type="password" placeholder="Password" name="password">
-        </div>
-        <button id="loginbutton">Login</button>
-    </form>
-    <img class="logo" src="images/school.png" alt="Alexander the Great Primary School">
-    <h1><a href="https://en.wikipedia.org/wiki/Alexander_the_Great" target="_blank"> Alexander the Great Primary
-            School</a></h1>
-    <table>
-        <thead>
-            <tr>
-                <th>Monday</th>
-                <th>Tuesday</th>
-                <th>Wednesday</th>
-                <th>Thursday</th>
-                <th>Friday</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td id="monday"><img class="timetable" src="images/history.png" alt="History">History</td>
-                <td id="tuesday"><img class="timetable" src="images/it.png" alt="IT">Computer Science</td>
-                <td id="wednesday"><img class="timetable" src="images/geography.png" alt="Geography">Geography</td>
-                <td id="thursday"><img class="timetable" src="images/nature.png" alt="Nature">Nature Studies</td>
-                <td id="friday"><img class="timetable" src="images/pe.png" alt="PE">Physical Education</td>
-            </tr>
-            <tr>
-                <td id="monday"><img class="timetable" src="images/pe.png" alt="PE">Physical Education</td>
-                <td id="tuesday"><img class="timetable" src="images/nature.png" alt="Nature">Nature Studies</td>
-                <td id="wednesday"><img class="timetable" src="images/geography.png" alt="Geography">Geography</td>
-                <td id="thursday"><img class="timetable" src="images/it.png" alt="IT">Computer Science</td>
-                <td id="friday"><img class="timetable" src="images/history.png" alt="History">History</td>
-            </tr>
-            <tr>
-                <td id="monday"><img class="timetable" src="images/english.png" alt="English">English</td>
-                <td id="tuesday"><img class="timetable" src="images/history.png" alt="History">History</td>
-                <td id="wednesday"><img class="timetable" src="images/english.png" alt="English">English</td>
-                <td id="thursday"><img class="timetable" src="images/it.png" alt="IT">Computer Science</td>
-                <td id="friday"><img class="timetable" src="images/math.png" alt="Math">Math</td>
-            </tr>
-            <tr>
-                <td id="monday"><img class="timetable" src="images/math.png" alt="Math">Math</td>
-                <td id="tuesday"><img class="timetable" src="images/english.png" alt="English">English</td>
-                <td id="wednesday"><img class="timetable" src="images/pe.png" alt="PE">Physical Education</td>
-                <td id="thursday"><img class="timetable" src="images/nature.png" alt="Nature">Nature Studies</td>
-                <td id="friday"><img class="timetable" src="images/history.png" alt="History">History</td>
-            </tr>
-            <tr>
-                <td id="monday"><img class="timetable" src="images/pe.png" alt="PE">Physical Education</td>
-                <td id="tuesday"><img class="timetable" src="images/nature.png" alt="Nature">Nature Studies</td>
-                <td id="wednesday"><img class="timetable" src="images/music.png" alt="Music">Music</td>
-                <td id="thursday"><img class="timetable" src="images/art.png" alt="Art">Art</td>
-                <td id="friday"><img class="timetable" src="images/math.png" alt="Math">Math</td>
-            </tr>
-        </tbody>
-    </table>
+<header>
+    <img src="images/school.png" alt="School logo" class="w-36 mx-auto">
+    <h1 class="font-serif text-center pt-5 text-3xl">California High School</h1>
+</header>
 
+<body class="bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 text-white p-5">
+    <div class="grid grid-flow-row auto-rows-max">
+        <div id="monday" class="p-2 bg-red-700 text-center">
+            <h1>MONDAY</h1>
+            <p>something</p>
+            <p>something</p>
+            <p>something</p>
+            <p>something</p>
+            <p>something</p>
+            <p>something</p>
+        </div>
+        <div id="tuesday" class="p-2 bg-red-700 text-center">
+            <h1>TUESDAY</h1>
+            <p>something</p>
+            <p>something</p>
+            <p>something</p>
+            <p>something</p>
+            <p>something</p>
+            <p>something</p>
+        </div>
+        <div id="wednesday" class="p-2 text-center">
+            <h1 class="bg">WEDNESDAY</h1>
+            <p>something</p>
+            <p>something</p>
+            <p>something</p>
+            <p>something</p>
+            <p>something</p>
+            <p>something</p>
+
+        </div>
+        <div id="thursday" class="p-2 bg-red-700 text-center">
+            <h1>THURSDAY</h1>
+            <p>something</p>
+            <p>something</p>
+            <p>something</p>
+            <p>something</p>
+            <p>something</p>
+            <p>something</p>
+        </div>
+        <div id="friday" class="p-2 bg-red-700 text-center">
+            <h1>FRIDAY</h1>
+            <p>something</p>
+            <p>something</p>
+            <p>something</p>
+            <p>something</p>
+            <p>something</p>
+            <p>something</p>
+        </div>
+    </div>
 </body>
 
 </html>
