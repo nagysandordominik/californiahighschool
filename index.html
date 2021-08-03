@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timetable</title>
+    <title>California High School</title>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,68 +13,128 @@
 </head>
 
 <header>
+    <nav>
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-4">
+                    <!-- logo -->
+                    <div>
+                        <a href="#" class="flex items-center py-5 px-2 text-gray-700 hover:text-gray-900">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path
+                                    d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z" />
+                            </svg>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                            </svg>
+                            <span class="font-bold">California High School</span>
+                        </a>
+                    </div>
+
+                    <!-- primary nav -->
+                    <div class="hidden md:flex items-center space-x-1 ">
+                        <a href="#" class="py-5 px-3 text-gray-800 hover:text-gray-900">About</a>
+                        <a href="#" class="py-5 px-3 text-gray-800 hover:text-gray-900">Timetable</a>
+                    </div>
+                </div>
+
+                <!-- secondary nav -->
+                <div class="hidden md:flex items-center space-x-1 ">
+                    <a href="" class="py-5 px-3 ">Login</a>
+                    <a href=""
+                        class="py-2 px-3 bg-yellow-400 hover:bg-yellow-300 text-yellow-900 hover:text-yellow-800 rounded transition duration-300">Signup</a>
+                </div>
+
+                <!-- mobile button goes here -->
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button">
+                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- mobile menu -->
+        <div class="mobile-menu hidden md:hidden">
+            <a href="#" class="inline-block py-5 px-4 text-md hover:bg-gray-200">About</a>
+            <a href="#" class="inline-block py-5 px-4 text-md hover:bg-gray-200">Timetable</a>
+            <div class="inline">
+                <a href="" class="py-5 px-3 inline-block">Login</a>
+                <a href="" class="py-2 px-3 bg-yellow-400 hover:bg-yellow-300 text-yellow-900 hover:text-yellow-800 rounded 
+                    transition duration-300 inline-block">Signup</a>
+            </div>
+        </div>
+    </nav>
+
+
     <img src="images/school.png" alt="School logo" class="w-36 mx-auto">
-    <h1 class="font-serif text-center pt-3 text-4xl uppercase">California <br> High School</h1>
+
 </header>
 
 <body class="bg-gradient-to-r from-green-200 to-yellow-100 text-black p-5 font-sans ">
-    <div class="grid grid-flow-row auto-rows-max pt-5 ">
-        <div id="monday" class="bg-green-500 text-center rounded-md shadow-2xl mb-5 ">
-            <h1 class="bg-green-700	p-1 text-white rounded-t-md text-2xl">MONDAY</h1>
-            <div class="text-white text-left p-3 divide-y">
-                <p> <img src="images/history.png" alt="" class="w-8 inline mr-5 mb-2 mt-2">History</p>
-                <p> <img src="images/it.png" alt="" class="w-8 inline mr-5 mb-2 mt-2">Computer Science</p>
-                <p> <img src="images/geography.png" alt="" class="w-8 inline mr-5 mb-2 mt-2">Geography</p>
-                <p> <img src="images/nature.png" alt="" class="w-8 inline mr-5 mb-2 mt-2">Nature Studies</p>
-                <p> <img src="images/pe.png" alt="" class="w-8 inline mr-5 mb-2 mt-2">Physical Education</p>
-                <p> <img src="images/math.png" alt="" class="w-8 inline mr-5 mb-1 mt-2">Math</p>
+    <h1 class="mx-auto text-5xl block text-center p-2">Welcome to our school!</h1>
+    <div class="grid grid-flow-row md:grid-flow-col md:auto-rows-max md:space-x-5 pt-5">
+
+
+        <div id="TEACHERS" class="bg-green-500 text-center rounded-md shadow-2xl max-w-md mb-5 ">
+            <h1 class="bg-green-700	p-1 text-white rounded-t-md text-2xl">TEACHERS</h1>
+            <img src="images/img2.jpg" alt="" class="h-3/6 w-screen">
+            <div class="text-white text-left p-3 ">
+                <p class="text-justify	">We’ve all had teachers who have inspired us, who have made a difference to our
+                    lives. Teachers have
+                    the power to make or break lives. A great lesson can inspire a passion for a subject that lasts a
+                    lifetime, while lacklustre teaching can kill any desire for learning. Teachers who make a
+                    significant difference in their students’ lives – sometimes against all odds - deserve to be
+                    celebrated.</p>
+
             </div>
         </div>
-        <div id="tuesday" class="bg-green-500 text-center rounded-md shadow-2xl mb-5">
-            <h1 class="bg-green-700	p-1 text-white rounded-t-md text-2xl">TUESDAY</h1>
-            <div class="text-white text-left p-3 divide-y ">
-                <p> <img src="images/pe.png" alt="" class="w-8 inline mr-5 mb-2 mt-2">Physical Education</p>
-                <p> <img src="images/nature.png" alt="" class="w-8 inline mr-5 mb-2 mt-2">Nature Studies</p>
-                <p> <img src="images/geography.png" alt="" class="w-8 inline mr-5 mb-2 mt-2">Geography</p>
-                <p> <img src="images/it.png" alt="" class="w-8 inline mr-5 mb-2 mt-2">Computer Science</p>
-                <p> <img src="images/art.png" alt="" class="w-8 inline mr-5 mb-2 mt-2">Art</p>
-                <p> <img src="images/english.png" alt="" class="w-8 inline mr-5 mb-1 mt-2">English</p>
+
+
+        <div id="EQUIPMENT" class="bg-green-500 text-center rounded-md shadow-2xl max-w-md mb-5">
+            <h1 class="bg-green-700	p-1 text-white rounded-t-md text-2xl">EQUIPMENT</h1>
+            <img src="images/img3.jpg" alt="" class="h-3/6 w-screen">
+            <div class="text-white text-justify	 p-3 ">
+                <p> An effective school facility is responsive to the changing programs of educational delivery, and at
+                    a minimum should provide a physical environment that is comfortable, safe, secure, accessible, well
+                    illuminated, well ventilated, and aesthetically pleasing. The facility also includes
+                    furnishings, materials and supplies, equipment and information technology, as well as various
+                    aspects of the building grounds, namely, athletic fields, playgrounds, areas for outdoor learning,
+                    and vehicular access and parking.</p>
             </div>
         </div>
-        <div id="wednesday" class="bg-green-500 text-center rounded-md shadow-2xl mb-5">
-            <h1 class="bg-green-700	p-1 text-white rounded-t-md text-2xl">WEDNESDAY</h1>
-            <div class="text-white text-left p-3 divide-y">
-                <p> <img src="images/english.png" alt="" class="w-8 inline mr-5 mb-2 mt-2">English</p>
-                <p> <img src="images/art.png" alt="" class="w-8 inline mr-5 mb-2 mt-2">Art</p>
-                <p> <img src="images/music.png" alt="" class="w-8 inline mr-5 mb-2 mt-2">Music</p>
-                <p> <img src="images/math.png" alt="" class="w-8 inline mr-5 mb-2 mt-2">Math</p>
-                <p> <img src="images/nature.png" alt="" class="w-8 inline mr-5 mb-2 mt-2">Nature Studies</p>
-                <p> <img src="images/pe.png" alt="" class="w-8 inline mr-5 mb-1 mt-2">Physical Education</p>
-            </div>
-        </div>
-        <div id="thursday" class="bg-green-500 text-center rounded-md shadow-2xl mb-5">
-            <h1 class="bg-green-700	p-1 text-white rounded-t-md text-2xl">THURSDAY</h1>
-            <div class="text-white text-left p-3 divide-y">
-                <p> <img src="images/pe.png" alt="" class="w-8 inline mr-5 mb-2 mt-2">Physical Education</p>
-                <p> <img src="images/math.png" alt="" class="w-8 inline mr-5 mb-2 mt-2">Math</p>
-                <p> <img src="images/it.png" alt="" class="w-8 inline mr-5 mb-2 mt-2">Computer Science</p>
-                <p> <img src="images/nature.png" alt="" class="w-8 inline mr-5 mb-2 mt-2">Nature Studies</p>
-                <p> <img src="images/geography.png" alt="" class="w-8 inline mr-5 mb-2 mt-2">Geography</p>
-                <p> <img src="images/art.png" alt="" class="w-8 inline mr-5 mb-1 mt-2">Art</p>
-            </div>
-        </div>
-        <div id="friday" class="bg-green-500 text-center rounded-md shadow-2xl mb-5">
-            <h1 class="bg-green-700	p-1 text-white rounded-t-md text-2xl">FRIDAY</h1>
-            <div class="text-white text-left p-3 divide-y">
-                <p> <img src="images/nature.png" alt="" class="w-8 inline mr-5 mb-2 mt-2">Nature Studies</p>
-                <p> <img src="images/history.png" alt="" class="w-8 inline mr-5 mb-2 mt-2">History</p>
-                <p> <img src="images/geography.png" alt="" class="w-8 inline mr-5 mb-2 mt-2">Geography</p>
-                <p> <img src="images/it.png" alt="" class="w-8 inline mr-5 mb-2 mt-2">Computer Science</p>
-                <p> <img src="images/pe.png" alt="" class="w-8 inline mr-5 mb-2 mt-2">Physical Education</p>
-                <p> <img src="images/music.png" alt="" class="w-8 inline mr-5 mb-1 mt-2">Music</p>
+
+        <div id="COMMUNITY" class="bg-green-500 text-center rounded-md shadow-2xl max-w-md mb-5">
+            <h1 class="bg-green-700	p-1 text-white rounded-t-md text-2xl">COMMUNITY</h1>
+            <img src="images/img1.jpg" alt="" class="h-3/6 w-screen">
+            <div class="text-white text-justify	 p-3 ">
+                <p> Community-engagement strategies are also widely considered central to successful school improvement
+                    by many individuals and organizations that work with public schools. Because some communities may be
+                    relatively uninformed about or disconnected from their local schools, a growing number of
+                    educational reformers and reform movements in recent decades have advocated for more inclusive,
+                    community-wide involvement in an improvement process. </p>
+
             </div>
         </div>
     </div>
+
+    <script>
+
+        const btn = document.querySelector("button.mobile-menu-button");
+        const menu = document.querySelector(".mobile-menu");
+
+        // eventlisteners
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
+
+    </script>
 </body>
 
 </html>
