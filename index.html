@@ -79,63 +79,69 @@
 
 <body class="bg-gradient-to-r from-green-200 to-yellow-100 text-black p-5 font-sans ">
     <h1 class="mx-auto text-5xl block text-center p-2">Welcome to our school!</h1>
+    <div class="grid grid-flow-row md:grid-flow-col md:auto-rows-max md:space-x-2 pt-5 justify-around">
 
-    <div
-        class="grid grid-flow-row md:grid-flow-col md:auto-rows-max md:space-x-2 pt-5 justify-around md:text-base text-xs">
+        <div
+            class="grid grid-flow-row md:grid-flow-col md:auto-rows-max md:space-x-2 pt-5 justify-around md:text-base text-xs">
 
-        <div id="TEACHERS" class="bg-green-500 text-center rounded-md shadow-2xl max-w-md mb-5 ">
-            <h1 class="bg-green-700	p-1 text-white rounded-t-md text-2xl">TEACHERS</h1>
-            <img src="images/img2.jpg" alt="" class="h-3/6 w-screen">
-            <div class="text-white text-justify p-3 ">
-                <p>We’ve all had teachers who have inspired us, who have made a difference to our
-                    lives. Teachers have
-                    the power to make or break lives. A great lesson can inspire a passion for a subject that lasts a
-                    lifetime, while lacklustre teaching can kill any desire for learning. Teachers who make a
-                    significant difference in their students’ lives – sometimes against all odds - deserve to be
-                    celebrated.</p>
+            <div id="TEACHERS" class="bg-green-500 text-center rounded-md shadow-2xl max-w-md mb-5 ">
+                <h1 class="bg-green-700	p-1 text-white rounded-t-md text-2xl">TEACHERS</h1>
+                <img src="images/img2.jpg" alt="" class="h-3/6 w-screen">
+                <div class="text-white text-justify p-3 ">
+                    <p>We’ve all had teachers who have inspired us, who have made a difference to our
+                        lives. Teachers have
+                        the power to make or break lives. A great lesson can inspire a passion for a subject that lasts
+                        a
+                        lifetime, while lacklustre teaching can kill any desire for learning. Teachers who make a
+                        significant difference in their students’ lives – sometimes against all odds - deserve to be
+                        celebrated.</p>
 
+                </div>
+            </div>
+
+
+            <div id="EQUIPMENT" class="bg-green-500 text-center rounded-md shadow-2xl max-w-md mb-5">
+                <h1 class="bg-green-700	p-1 text-white rounded-t-md text-2xl">EQUIPMENT</h1>
+                <img src="images/img3.jpg" alt="" class="h-3/6 w-screen">
+                <div class="text-white text-justify	 p-3 ">
+                    <p> An effective school facility is responsive to the changing programs of educational delivery, and
+                        at
+                        a minimum should provide a physical environment that is comfortable, safe, secure, accessible,
+                        well
+                        illuminated, well ventilated, and aesthetically pleasing. The facility also includes
+                        furnishings, materials and supplies, equipment and information technology, athletic fields,
+                        playgrounds, areas for outdoor learning,
+                        and vehicular access and parking.</p>
+                </div>
+            </div>
+
+            <div id="COMMUNITY" class="bg-green-500 text-center rounded-md shadow-2xl max-w-md mb-5">
+                <h1 class="bg-green-700	p-1 text-white rounded-t-md text-2xl">COMMUNITY</h1>
+                <img src="images/img1.jpg" alt="" class="h-3/6 w-screen">
+                <div class="text-white text-justify	 p-3 ">
+                    <p> Community-engagement strategies are also widely considered central to successful school
+                        improvement
+                        by many individuals and organizations that work with public schools. Because some communities
+                        may be
+                        relatively uninformed about or disconnected from their local schools, a growing number of
+                        educational reformers and reform movements in recent decades have advocated for more inclusive,
+                        community-wide involvement in an improvement process. </p>
+
+                </div>
             </div>
         </div>
 
+        <script>
 
-        <div id="EQUIPMENT" class="bg-green-500 text-center rounded-md shadow-2xl max-w-md mb-5">
-            <h1 class="bg-green-700	p-1 text-white rounded-t-md text-2xl">EQUIPMENT</h1>
-            <img src="images/img3.jpg" alt="" class="h-3/6 w-screen">
-            <div class="text-white text-justify p-3 ">
-                <p> An effective school facility is responsive to the changing programs of educational delivery, and at
-                    a minimum should provide a physical environment that is comfortable, safe, secure, accessible, well
-                    illuminated, well ventilated, and aesthetically pleasing. The facility also includes
-                    furnishings, materials and supplies, equipment and information technology, athletic fields,
-                    playgrounds, areas for outdoor learning,
-                    and vehicular access and parking.</p>
-            </div>
-        </div>
+            const btn = document.querySelector("button.mobile-menu-button");
+            const menu = document.querySelector(".mobile-menu");
 
-        <div id="COMMUNITY" class="bg-green-500 text-center rounded-md shadow-2xl max-w-md mb-5">
-            <h1 class="bg-green-700	p-1 text-white rounded-t-md text-2xl">COMMUNITY</h1>
-            <img src="images/img1.jpg" alt="" class="h-3/6 w-screen">
-            <div class="text-white text-justify	 p-3 ">
-                <p> Community-engagement strategies are also widely considered central to successful school improvement
-                    by many individuals and organizations that work with public schools. Because some communities may be
-                    relatively uninformed about or disconnected from their local schools, a growing number of
-                    educational reformers and reform movements in recent decades have advocated for more inclusive,
-                    community-wide involvement in an improvement process. </p>
+            // eventlisteners
+            btn.addEventListener("click", () => {
+                menu.classList.toggle("hidden");
+            });
 
-            </div>
-        </div>
-    </div>
-
-    <script>
-
-        const btn = document.querySelector("button.mobile-menu-button");
-        const menu = document.querySelector(".mobile-menu");
-
-        // eventlisteners
-        btn.addEventListener("click", () => {
-            menu.classList.toggle("hidden");
-        });
-
-    </script>
+        </script>
 </body>
 
 </html>
