@@ -1,3 +1,3 @@
 # timetable
 A school's timetable
-This is a basic layout for a timetable. Very. Basic...
+It is a fictional american high school's website, created the basic layout as a timetable, since then I upgraded with some Tailwind CSS.
